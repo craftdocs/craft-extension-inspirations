@@ -1,14 +1,14 @@
 # Craft eXtension Example
 
 This Extension provides an overview of functionality provided by the Craft X Library. 
-It is built for developers as an example on how to access functionality provided by Craft X
+It is built for developers as an example to show how to access functionality provided by Craft X
 
 ![Craft X Example](https://user-images.githubusercontent.com/2445418/144197973-2b4166f0-698a-4441-b467-b0585c5e8a20.gif)
 
 
 ## Building
 
-Simply run `npm install` and than `npm run build` to generate the .craftX file which can be installed.
+Simply run `npm install` and then `npm run build` to generate the .craftX file which can be installed.
 You can use `npm run dev` to test and debug in your local environment
 
 ## Styling
