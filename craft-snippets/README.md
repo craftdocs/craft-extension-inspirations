@@ -6,14 +6,14 @@ This extension lets you save Craft content as reusable snippets or templates tha
 
 ## Building
 
-Simply run `npm install` and than `npm run build` to generate the .craftX file which can be installed.
+Simply run `npm install` and then `npm run build` to generate the .craftX file which can be installed.
 You can use `npm run dev` to test and debug in your local environment.
 
-## As part of inspirations, Snippets showcase:
+## As part of inspirations, Snippets showcases the following:
 
-- using `storageApi` to persist & load extension data (Craft blocks in our case)
-- using `editorAPI` to get current selection (saving a snippet)
-- using `dataAPI` to insert blocks (inserting a snippet)
+- usage of `storageApi` to persist & load extension data (Craft blocks in our case)
+- usage of `editorAPI` to get current selection (saving a snippet)
+- usage of `dataAPI` to insert blocks (inserting a snippet)
 - dark mode handling: both via CSS in JS, and via CSS class based integration
 
 ## Technical Stack
