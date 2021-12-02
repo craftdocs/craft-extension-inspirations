@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body class="bg-systemBackground dark:bg-systemBackground-dark text-text dark:text-text-dark">
+  <div id="react-root"></div>
+  
+  <!---------------------------->
+  <!-------- CONSOLE ----------->
+  <!---------------------------->
+  <footer id="console" style="max-height: 50%; bottom: 0px;" class="absolute w-full overflow-auto bg-gray-50 dark:bg-groupBackground-dark z-50">
+    <div class="py-3 px-2 border-t border-interfaceBorder dark:border-interfaceBorder-dark ">
+      <div class="h-full flex flex-row">
+        <div id="consoleItemCount" style="visibility: hidden;"
+          class="flex flex-none w-8 text-xs justify-center text-text dark:text-text-dark items-center bg-groupBackground rounded-full px-2 truncate font-medium border border-interfaceBorder dark:bg-groupBackground-dark dark:border-gray-600">
+          12
+        </div>
+        <div id="openConsole"
+          class="flex flex-grow justify-center items-center truncate text-sm font-medium cursor-pointer">
+          <span class="select-none">Console</span>
+        </div>
+        <div id="consoleClear"
+          class="flex flex-none w-8 justify-center items-center text-secondaryText dark:text-secondaryText-dark hover:text-gray-700 dark:hover:text-white cursor-pointer"
+          style="visibility: hidden;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+          </svg>
+        </div>
+      </div>
+      <div id="consoleContent" class="mt-2" style="display:none; height: 50px; white-space: pre-wrap;">
+        <div class="h-4"></div>
+        <div id="consoleItems"></div>
+      </div>
+  </footer>
+</body>
+
+</html>

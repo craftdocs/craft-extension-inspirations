@@ -1,0 +1,10 @@
+{
+  "name": "Craft PowerTools",
+  "fileName": "craft-power-tools",
+  "author" : "The Team at Craft",
+  "description" : "Enhance your workflow with find & replace, query-based selection, and custom actions.",
+  "authorEmail" : "team@craft.do",
+  "id": "com.craft.powertools",
+  "api": "0.0.3",
+  "main": "index.html"
+}
