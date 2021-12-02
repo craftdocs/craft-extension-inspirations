@@ -1,0 +1,40 @@
+{
+  "name": "craft-connect-template-plugin-react",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack serve --mode=development"
+  },
+  "author": "Craft Docs",
+  "license": "MIT",
+  "devDependencies": {
+    "@craftdocs/craft-extension-api": "0.0.3",
+    "@craftdocs/craft-extension-api-sdk": "0.0.2",
+    "@types/styled-components": "^5.1.15",
+    "copy-webpack-plugin": "^9.1.0",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "styled-components": "^5.3.3",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.1",
+    "zip-webpack-plugin": "^4.0.1"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "browserify-zlib": "^0.2.0",
+    "https-browserify": "^1.0.0",
+    "react": "^17.0.2",
+    "react-dev-utils": "^11.0.4",
+    "react-dom": "^17.0.2",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.4",
+    "stream-http": "^3.2.0"
+  }
+}

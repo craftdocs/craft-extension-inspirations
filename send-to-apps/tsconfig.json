@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "baseUrl": ".",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "module": "ESNext",
+    "jsx": "react",
+    "allowJs": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "lib": [
+      "dom",
+      "esnext",
+      "scripthost",
+      "es2015"
+    ],
+    "typeRoots": [
+      "./node_modules/@craftdocs/craft-extension-api"
+    ]
+  },
+  "include": [ "**/*.ts", "**/*.tsx" ],
+}
