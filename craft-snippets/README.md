@@ -2,7 +2,7 @@
 
 This extension lets you save Craft content as reusable snippets or templates that you can insert anytime later while editing a document.
 
-![Craft Snippets](https://user-images.githubusercontent.com/2234706/144284895-be5f0ec3-7660-478f-9040-2fbd43e3ba77.gif)
+![Craft Snippets](https://user-images.githubusercontent.com/2234706/144433594-3f47b825-8e9d-4fb7-84ca-5b73f5bc7224.gif)
 
 ## Building
 
