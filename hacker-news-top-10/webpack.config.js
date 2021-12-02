@@ -62,7 +62,7 @@ module.exports = (env, argv) => {
         ],
       }),
       isProd && new ZipPlugin({
-        filename: manifestJson.id,
+        filename: manifestJson.fileName,
         extension: 'craftx',
         include: [
           'app.js.LICENSE.txt',
