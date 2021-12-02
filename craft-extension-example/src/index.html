@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body class="bg-systemBackground dark:bg-systemBackground-dark text-text dark:text-text-dark">
+  <div class="flex flex-col h-screen">
+    <header class="bg-systemBackground text-center border-b border-interfaceBorder text-sm font-medium z-50 dark:bg-systemBackground-dark dark:border-interfaceBorder-dark"
+      style="max-height:44px; min-height:44px;">
+      <div class="h-full flex flex-row">
+        <div id="navBar_backButton" style="visibility: hidden;"
+          class="flex flex-none w-12 justify-center items-center text-secondaryText dark:text-secondaryText-dark cursor-pointer hover:text-gray-700 dark:hover:text-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </div>
+        <div id="navBar_title" , class="flex flex-grow justify-center items-center truncate text-text dark:text-text-dark">Craft X Example
+        </div>
+        <div class="flex-none w-12"></div>
+      </div>
+    </header>
+    <main class="flex-1 overflow-y-auto">
+      <!-- START MAIN MENU -->
+      <div id="mainMenu" class="mx-2 mt-2 mb-4">
+        <!---- DATA API ---->
+        <div class="gridItem">
+          <div>
+            <span class="gridItem_icon bg-pink-50 text-pink-700">
+              <!-- Heroicon name: document-text -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </span>
+          </div>
+          <div class="mt-4 cursor-pointer">
+            <h3 class="text-base font-medium">
+              <div id="mainMenu_dataApi" class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Data APIs
+              </div>
+            </h3>
+            <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+              Examples which showcase how to read, write and update content in Craft Documents
+            </p>
+          </div>
+          <span class="gridItem_arrow group-hover:text-gray-400 dark:group-hover:text-gray-100" aria-hidden="true">
+            <!-- Heroicon name: arrow-right -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </span>
+        </div>
+        <!---- EDITOR API ---->
+        <div class="gridItem">
+          <div>
+            <span class="gridItem_icon bg-purple-50 text-purple-700">
+              <!-- Heroicon name: pencil -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+              </svg>
+            </span>
+          </div>
+          <div class="mt-4 cursor-pointer">
+            <h3 class="text-base font-medium">
+              <div id="mainMenu_editorApi" class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Editor APIs
+              </div>
+            </h3>
+            <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+              Examples which showcase how to access Editor State - including selection, currently open pages, and
+              navigation
+            </p>
+          </div>
+          <span class="gridItem_arrow group-hover:text-gray-400 dark:group-hover:text-gray-100" aria-hidden="true">
+            <!-- Heroicon name: arrow-right -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </span>
+        </div>
+        <!---- STORAGE API  ---->
+        <div class="gridItem">
+          <div>
+            <span class="gridItem_icon bg-blue-50 text-blue-700">
+              <!-- Heroicon name: database -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+              </svg>
+            </span>
+          </div>
+          <div class="mt-4 cursor-pointer">
+            <h3 id="mainMenu_storageApi" class="text-base font-medium">
+              <div class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Storage APIs
+              </div>
+            </h3>
+            <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+              Examples which showcase how to read and write data - such as storing authentication keys, state etc -
+              which
+              extensions can persist across multiple sessions
+            </p>
+          </div>
+          <span class="gridItem_arrow group-hover:text-gray-400 dark:group-hover:text-gray-100" aria-hidden="true">
+            <!-- Heroicon name: arrow-right -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <!-- END MAIN MENU -->
+
+      <!---------------------------->
+      <!----- DATA API DETAILS ----->
+      <!---------------------------->
+      <section id="dataApiDetails" class="px-2 pt-2 pb-4" style="display:none;">
+        <div id="get_page_button" class="gridItem cursor-pointer">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              <div class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Get Page
+              </div>
+            </h3>
+          </div>
+          <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+            Get's the content of the currently displayed page
+          </p>
+        </div>
+        <div id="delete_blocks_button" class="gridItem cursor-pointer">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              <div class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Delete Blocks
+              </div>
+            </h3>
+          </div>
+          <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+            Delete First Block on Page
+          </p>
+        </div>
+        <div id="insert_blocks_button" class="gridItem cursor-pointer">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              <div class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Insert Blocks
+              </div>
+            </h3>
+          </div>
+          <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+            Insert blocks loaded via get page
+          </p>
+        </div>
+        <div id="button_moveLastToTop" class="gridItem cursor-pointer">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              <div class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Move Blocks
+              </div>
+            </h3>
+          </div>
+          <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+            Move last block to the top of the page
+          </p>
+        </div>
+        <div id="button_lowercase" class="gridItem cursor-pointer">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              <div class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Update Blocks
+              </div>
+            </h3>
+          </div>
+          <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+            Make all content lowercase on the page
+          </p>
+        </div>
+      </section>
+      <!-- END DATA API DETAILS -->
+
+      <!---------------------------->
+      <!---- EDITOR API DETAILS ---->
+      <!---------------------------->
+      <section id="editorApiDetails" class="px-2 pt-2 pb-4" style="display:none;"">
+        <div id="get_selection_button" class="gridItem cursor-pointer">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              <div class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Get Selected Blocks
+              </div>
+            </h3>
+          </div>
+          <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+            Get the currently selected blocks
+          </p>
+        </div>
+        <div id="get_text_selection_button" class="gridItem cursor-pointer">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              <div class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Get Text Selection
+              </div>
+            </h3>
+          </div>
+          <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+            Get the currently selected text
+          </p>
+        </div>
+        <div id="select_blocks_button" class="gridItem cursor-pointer">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              <div class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Select Blocks
+              </div>
+            </h3>
+          </div>
+          <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+            Select the first 2 blocks on the page
+          </p>
+        </div>
+        <div id="navigate_to_block" class="gridItem cursor-pointer">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              <div class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                Navigate to Block
+              </div>
+            </h3>
+          </div>
+          <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+            Navigate into the first block within the current page
+          </p>
+        </div>
+      </section>
+
+
+      <!---------------------------->
+      <!--- STORAGE API DETAILS ---->
+      <!---------------------------->
+      <section id="storageApiDetails" class="px-2 pt-2 pb-4" style="display:none;">
+        <!--- STORE VALUE ---->
+        <div class="gridItem">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              Store Value
+            </h3>
+          </div>
+          <div class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+            Store the entered value
+          </div>
+          <div class="mt-1 rounded-md border border-gray-300 dark:border-gray-600 focus-within:ring-1 focus-within:ring-blue-600 focus-within:border-blue-600 focus:outline-none focus:border-transparent">
+            <textarea id="textInput_store" rows="2" name="comment" id="comment" class="p-2 shadow-sm focus:outline-none focus:border-transparent block w-full text-sm border-gray-300 dark:border-gray-600 rounded-md" placeholder="Enter value to store under 'customKey'"></textarea>
+          </div>
+          <div class="mt-2 text-sm">
+            <button id="storageApi_store_button" type="button" class="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:text-sm">
+              Store Value
+            </button>
+          </div>
+        </div>
+        <!--- LOAD VALUE ---->
+        <div class="gridItem">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              Load Value
+            </h3>
+          </div>
+          <div class="mt-1 rounded-md border border-gray-300 dark:border-gray-600 focus-within:ring-1 focus-within:ring-blue-600 focus-within:border-blue-600 focus:outline-none focus:border-transparent">
+            <textarea id="textInput_load" disabled rows="2" name="comment" id="comment" class="p-2 shadow-sm focus:outline-none focus:border-transparent block w-full text-sm border-gray-300 dark:border-gray-600 rounded-md" placeholder="Press button below to load value"></textarea>
+          </div>
+          <div class="mt-2 text-sm">
+            <button id="storageApi_load_button" type="button" class="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:text-sm">
+              Load Value
+            </button>
+          </div>
+        </div>
+         <!--- CLEAR VALUE ---->
+         <div class="gridItem">
+          <div class="h-full flex flex-row">
+            <h3 class="flex flex-grow text-sm font-medium">
+              Clear Value
+            </h3>
+          </div>
+          <p class="mt-0.5 text-sm text-secondaryText dark:text-secondaryText-dark">
+            Pressing the button below will clear the value for 'customKey'
+          </p>
+          <div class="mt-2 text-sm">
+            <button id="storageApi_clear_button" type="button" class="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:text-sm">
+              Clear Value
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!---------------------------->
+    <!-------- CONSOLE ----------->
+    <!---------------------------->
+    <footer id="console" style="max-height: 50%;" class="overflow-auto bg-gray-50 dark:bg-groupBackground-dark z-50">
+      <div class="py-3 px-2 border-t border-interfaceBorder dark:border-interfaceBorder-dark ">
+        <div class="h-full flex flex-row">
+          <div id="consoleItemCount" style="visibility: hidden;"
+            class="flex flex-none w-8 text-xs justify-center text-text dark:text-text-dark items-center bg-groupBackground rounded-full px-2 truncate font-medium border border-interfaceBorder dark:bg-groupBackground-dark dark:border-gray-600">
+            12
+          </div>
+          <div id="openConsole"
+            class="flex flex-grow justify-center items-center truncate text-sm font-medium cursor-pointer">
+            <span class="select-none">Console</span>
+          </div>
+          <div id="consoleClear"
+            class="flex flex-none w-8 justify-center items-center text-secondaryText dark:text-secondaryText-dark hover:text-gray-700 dark:hover:text-white cursor-pointer"
+            style="visibility: hidden;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+            </svg>
+          </div>
+        </div>
+        <div id="consoleContent" style="display:none;">
+          <div class="h-4"></div>
+          <div id="consoleItems"></div>
+        </div>
+    </footer>
+  </div>
+</body>
+
+</html>

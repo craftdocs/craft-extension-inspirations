@@ -1,0 +1,10 @@
+{
+  "name": "Craft X Example",
+  "fileName": "craftx-example",
+  "author" : "Craft Docs",
+  "authorEmail" : "team@craft.do",
+  "description" : "Example showcasing the capabilities of Craft eXtensions.",
+  "id": "com.craft.x.example",
+  "api": "0.0.3",
+  "main": "index.html"
+}
