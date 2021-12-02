@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: light dark;
+}
+
+.gridItem {
+    @apply rounded-lg shadow mb-2 relative group bg-groupBackground dark:bg-groupBackground-dark px-3 py-2;
+}
+
+.gridItem .svgIcon {
+    @apply w-5 h-5;
+}
+.gridItem_icon {
+    @apply rounded-lg inline-flex p-2
+}
+
+.gridItem_arrow {
+    @apply rounded-lg inline-flex pt-2 pb-2 text-gray-300 absolute top-2 right-4 pointer-events-none;
+}
+
+.consoleContentItem {
+    @apply text-xs text-gray-700 font-mono border-b border-gray-100 p-2 text-left bg-gray-100 rounded-md mb-2
+}
+
+.surfaceShadow {
+    box-shadow:0px 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinnerContainer {
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    float: left;
+    margin-right: 12px;
+    position: absolute;
+    top:40%;
+    left:50%;
+}
+
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    margin-left: -12px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-top-color: rgba(0, 0, 0, 0.75);
+    animation: spinner .6s linear infinite;
+}

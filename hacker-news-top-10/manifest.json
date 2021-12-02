@@ -1,0 +1,10 @@
+{
+  "name": "Hacker News Top10",
+  "fileName": "hacker-news-top10",
+  "author" : "Craft Docs",
+  "authorEmail" : "team@craft.do",
+  "description" : "Load the top 10 stories from Hacker News.",
+  "id": "com.craft.hackernews.top10",
+  "api": "1.0",
+  "main": "index.html"
+}

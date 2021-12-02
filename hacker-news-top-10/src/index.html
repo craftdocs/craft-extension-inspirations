@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body class="bg-systemBackground dark:bg-systemBackground-dark text-text dark:text-text-dark">
+  <div class="flex flex-col h-screen">
+    <header class="text-center text-sm font-medium z-50 border-0 border-b border-interfaceBorder dark:border-interfaceBorder-dark" style="max-height:44px; min-height:44px;">
+      <div class="h-full flex flex-row">
+        <div id="navBar_backButton" style="visibility: hidden;" class="flex flex-none w-12 justify-center items-center text-secondaryText dark:text-secondaryText-dark cursor-pointer hover:text-gray-700 dark:hover:text-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </div>
+        <div id="navBar_title" , class="flex flex-grow justify-center items-center truncate text-hn_orange">Hacker News Top10
+        </div>
+        <div class="flex-none w-12"></div>
+      </div>
+    </header>
+    <main class="flex-1 overflow-y-auto">
+      <div class="spinnerContainer" id="spinner">
+        <div class="spinner">
+        </div>
+      </div>
+      <!-- START ARTICLES -->
+      <div id="articles" class="mx-2 mt-2 mb-4">
+      </div>
+      <!-- END ARTICLES -->
+    </main>
+    <!---------------------------->
+    <!-------- FOOTER ----------->
+    <!---------------------------->
+    <footer id="footer" style="display:none" class="p-2 border-0 border-t border-interfaceBorder dark:border-interfaceBorder-dark">
+      <button id="insert_button" class="p-2 rounded-lg text-sm font-medium text-white w-full bg-hn_orange hover:bg-hn_orange_hover">Insert Stories</button>
+    </footer>
+    
+  </div>
+</body>
+
+</html>
