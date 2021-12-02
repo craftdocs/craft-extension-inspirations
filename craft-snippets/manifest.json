@@ -1,0 +1,10 @@
+{
+  "name": "Craft Snippets",
+  "fileName": "craft-snippets",
+  "author" : "Craft Docs",
+  "authorEmail" : "team@craft.do",
+  "description" : "Save Craft blocks and reuse them later as templates or off-the-shelf snippets",
+  "id": "com.craft.snippets",
+  "api": "0.0.3",
+  "main": "index.html"
+}
