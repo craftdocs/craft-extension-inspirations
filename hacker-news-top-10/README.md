@@ -6,7 +6,7 @@ This example demostrates functionality of a simple extensions which loads data f
 
 ## Building
 
-Simply run `npm install` and than `npn run build` to generate the .craftX file which can be installed.
+Simply run `npm install` and then `npn run build` to generate the .craftX file which can be installed.
 You can use `npm run dev` to test and debug in your local environment
 
 ## Styling
@@ -15,4 +15,4 @@ This example uses Tailwind CSS for styling elements - you can learn more about [
 
 ## Other Notes
 
-To learn more about Craft eXtesioons visit the [Craft X developer portal](https://developer.craft.do)
+To learn more about Craft eXtensions visit the [Craft X developer portal](https://developer.craft.do)
