@@ -4,6 +4,10 @@ This extension lets you save Craft content as reusable snippets or templates tha
 
 ![Craft Snippets](https://user-images.githubusercontent.com/2234706/144433594-3f47b825-8e9d-4fb7-84ca-5b73f5bc7224.gif)
 
+## Run this extension
+
+For instructions how to get started and test this extension, visit its [CraftX introduction](https://www.craft.do/s/OhmDYXrBwI2wZS/b/0FD332FF-0D9E-4F09-8449-CE76B50820DB/Custom_Snippets).
+
 ## Building
 
 Simply run `npm install` and then `npm run build` to generate the .craftX file which can be installed.

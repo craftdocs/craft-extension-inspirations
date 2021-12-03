@@ -26,6 +26,10 @@ and use the API through this server. This extension does not contain a proxy
 template, you have to come up with your own solution. A good starting point is
 https://www.twilio.com/blog/node-js-proxy-server.
 
+## Run this extension
+
+For instructions how to get started and test this extension, visit its [CraftX introduction](https://www.craft.do/s/OhmDYXrBwI2wZS/b/46F75378-8323-4091-925B-EEFEE6EE6BFC/Ghost).
+
 ## Building and running
 
 `npm run build` builds the extension to the `dist/` folder.

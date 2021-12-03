@@ -4,6 +4,10 @@ This extension provides advanced tools for document editing including find & rep
 
 ![CraftPowerTools](https://user-images.githubusercontent.com/4363697/144303609-bf89695e-aa7a-4859-b96c-296e8830ffd1.gif)
 
+## Run this extension
+
+For instructions how to get started and test this extension, visit its [CraftX introduction](https://www.craft.do/s/OhmDYXrBwI2wZS/b/1761ADC6-8860-4476-B73C-92A87C9CF364/Craft_Power_Tools).
+
 ## Building
 
 Simply run `npm install` and then `npm run build` to generate the .craftX file which can be installed.

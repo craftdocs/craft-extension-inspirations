@@ -7,6 +7,10 @@ app. See `src/ExportApp.tsx` for the list of currently supported apps.
 
 ![See it in action](https://user-images.githubusercontent.com/16385508/144403275-91d70ec7-eeb9-4b44-ba5d-a8cb26165d0b.gif)
 
+## Run this extension
+
+For instructions how to get started and test this extension, visit its [CraftX introduction](https://www.craft.do/s/OhmDYXrBwI2wZS/b/86CAE18D-5616-4DE3-85B5-5078FF132EEC/Things).
+
 ## Architecture
 
 The extension relies on [x-callback-urls](http://x-callback-url.com) to send
