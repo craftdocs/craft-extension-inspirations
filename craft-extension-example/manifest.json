@@ -5,6 +5,6 @@
   "authorEmail" : "team@craft.do",
   "description" : "Example showcasing the capabilities of Craft eXtensions.",
   "id": "com.craft.x.example",
-  "api": "0.0.3",
+  "api": "0.0.4",
   "main": "index.html"
 }

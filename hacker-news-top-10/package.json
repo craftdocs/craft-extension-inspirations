@@ -11,7 +11,7 @@
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
-    "@craftdocs/craft-extension-api": "0.0.3",
+    "@craftdocs/craft-extension-api": "0.0.4",
     "@craftdocs/craft-extension-api-sdk": "0.0.2",
     "@types/node": "^16.11.3",
     "copy-webpack-plugin": "^9.1.0",

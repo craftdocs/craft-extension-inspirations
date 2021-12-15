@@ -5,6 +5,6 @@
   "description" : "Enhance your workflow with find & replace, query-based selection, and custom actions.",
   "authorEmail" : "team@craft.do",
   "id": "com.craft.powertools",
-  "api": "0.0.3",
+  "api": "0.0.4",
   "main": "index.html"
 }
