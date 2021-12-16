@@ -121,10 +121,6 @@ const App: React.FC<{}> = () => {
 
     // some handling for not yet supported block types
     let finalBlocksToInsert: Array<CraftBlock | CraftBlockInsert> = snippet;
-    const notSupportedTypes = snippet.map(block => block.type).filter(type => !isBlockTypeSupported(type));
-    if (notSupportedTypes.length > 0) {
-      finalBlocksToInsert = [...snippet, createNotSupportedNote(new Set(notSupportedTypes))];
-    }
 
     const addResult = await craft.dataApi.addBlocks(finalBlocksToInsert, location);
     if (addResult.status === "error") {
@@ -207,30 +203,6 @@ function defaultTitleForSnippet(blocks: CraftBlock[]): string {
   }
 
   return textContent.length <= 64 ? textContent : textContent.substr(0, 64).concat("...");
-}
-
-function createNotSupportedNote(types: Set<CraftBlock["type"]>) {
-  return craft.blockFactory.textBlock({
-    content: [
-      { text: "!", isBold: true, isCode: true},
-      { text: ` Skipped some content (${Array.from(types).join(", ")})`, isBold: true},
-      { text: "\nNote that some block types cannot yet be added to documents in the CraftX Developer Preview. Coming soon!" }
-    ],
-    hasBlockDecoration: true,
-    color: "blue1",
-    style: {alignmentStyle: "center"}
-  });
-}
-
-function isBlockTypeSupported(type: CraftBlock["type"]): boolean {
-  switch (type) {
-    case "textBlock":
-    case "horizontalLineBlock":
-    case "codeBlock":
-      return true;
-    default:
-      return false;
-  }
 }
 
 const GlobalStyles = createGlobalStyle`

@@ -5,6 +5,6 @@
   "authorEmail" : "team@craft.do",
   "description" : "Load the top 10 stories from Hacker News.",
   "id": "com.craft.hackernews.top10",
-  "api": "1.0",
+  "api": "0.0.4",
   "main": "index.html"
 }

@@ -3,7 +3,7 @@
   "fileName": "send-to-apps",
   "id": "com.craft.send.to.apps",
   "description" : "Re-creating the functionality of sending the currently opened page to various other apps with Craft X",
-  "api": "0.0.3",
+  "api": "0.0.4",
   "main": "index.html",
   "author": "Craft Docs",
   "authorEmail" : "team@craft.do"

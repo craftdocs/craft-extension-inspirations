@@ -29,8 +29,8 @@ export const Header: React.FC<HeaderProps> = ({ mode, backSelected }) => {
 
     return <header id="header" className="bg-systemBackground text-center border-b border-interfaceBorder text-sm font-medium z-50 dark:bg-systemBackground-dark dark:border-interfaceBorder-dark">
         <div className="h-full flex flex-row">
-            <div id="navBar_backButton" onClick={backSelected}
-                className="flex flex-none w-12 justify-center items-center text-secondaryText dark:text-secondaryText-dark cursor-pointer hover:text-gray-700 dark:hover:text-gray-100">
+            <div id="navBar_backButton" onClick={backSelected} style={mode === "main" ? {visibility: "hidden"} : {}}
+                 className="flex flex-none w-12 justify-center items-center text-secondaryText dark:text-secondaryText-dark cursor-pointer hover:text-gray-700 dark:hover:text-gray-100">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
                 </svg>

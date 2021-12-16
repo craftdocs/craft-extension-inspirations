@@ -10,7 +10,7 @@
   "author": "Craft",
   "license": "MIT",
   "devDependencies": {
-    "@craftdocs/craft-extension-api": "0.0.3",
+    "@craftdocs/craft-extension-api": "0.0.4",
     "@craftdocs/craft-extension-api-sdk": "0.0.2",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",

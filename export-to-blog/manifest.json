@@ -3,7 +3,7 @@
   "fileName": "export-to-blog",
   "id": "com.craft.export.to.blog",
   "description" : "Export your Craft documents to different blogging platforms.",
-  "api": "0.0.3",
+  "api": "0.0.4",
   "main": "index.html",
   "author": "Craft Docs",
   "authorEmail" : "team@craft.do"
