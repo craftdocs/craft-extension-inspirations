@@ -58,7 +58,7 @@ export function blockModelToThingsTodo(block: CraftBlock): ThingsTodo | null {
                     }
                 })
             } else {
-                notes.push(content(block));
+                notes.push(content(subblock));
             }
         }
     }
