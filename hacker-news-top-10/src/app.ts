@@ -6,6 +6,7 @@ import {
   CraftTextRun,
   IndexLocation,
 } from "@craftdocs/craft-extension-api";
+import {encode} from 'html-entities';
 
 /* ---- ENSURE DEV MODE WORKS -----
 You can run this extension locally with `npm run dev` in order to have faster iteration cycles.
@@ -50,24 +51,24 @@ function createHTMLForStory(story: Object): Node {
   }
   const storyUrl: string = story["url"];
   const id: string = story["id"];
-  const discusssionUrl: string = `https://news.ycombinator.com/item?id=${id}`;
+  const discusssionUrl: string = `https://news.ycombinator.com/item?id=${encodeURIComponent(id)}`;
   const htmlString: string = `
   <div class="gridItem">
     <h3 class="text-sm font-medium select-none">
-      ${story["title"]}
+      ${encode(story["title"])}
     </h3>
     ${
       story["url"] != null
         ? `<div>
-      <a href= "" onclick = "window.openURL('${storyUrl}'); return false;" class="underline text-sm text-secondaryText dark:text-secondaryText-dark" >
-        ${new URL(story["url"]).hostname}
+      <a href="${encode(storyUrl)}" onclick="window.openURL(this.getAttribute('href')); return false;" class="underline text-sm text-secondaryText dark:text-secondaryText-dark" >
+        ${encode(new URL(story["url"]).hostname)}
       </a>
     </div>`
         : ""
     }
     <div>
-      <a href="" onclick="window.openURL('${discusssionUrl}'); return false;" class="text-xs text-secondaryText dark:text-secondaryText-dark">
-        ${story["by"]} | ${story["score"]} points | ${numberOfCommens} comments
+      <a href="${encode(discusssionUrl)}" onclick="window.openURL(this.getAttribute('href')); return false;" class="text-xs text-secondaryText dark:text-secondaryText-dark">
+        ${encode(story["by"])} | ${encode(story["score"])} points | ${numberOfCommens} comments
       </a>
     </div>
   </div>`;
@@ -88,7 +89,7 @@ function initInsertButtonHandler() {
       if (element["kids"] != undefined) {
         numberOfComments = element["kids"].length;
       }
-      const discusssionUrl: string = `https://news.ycombinator.com/item?id=${element["id"]}`;
+      const discusssionUrl: string = `https://news.ycombinator.com/item?id=${encodeURIComponent(element["id"])}`;
       const articleUrl = element["url"];
       const content: CraftTextRun[] =
         articleUrl != null
@@ -151,7 +152,7 @@ async function loadStoryDetails(id: string): Promise<Object> {
   let retData: Object = [];
   try {
     const data = await fetch(
-      `https://hacker-news.firebaseio.com/v0/item/${id}.json`
+      `https://hacker-news.firebaseio.com/v0/item/${escape(id)}.json`
     ).then((res) => res.json());
     retData = data;
   } catch (err) {
